@@ -74,7 +74,7 @@
                 <configuration>
                     <rulesets>
                         <!-- this "../" is not a good practice but it works-->
-                        <ruleset>../pmd-config.xml</ruleset>
+                        <ruleset>pmd-config.xml</ruleset>
                     </rulesets>
                     <sourceEncoding>utf-8</sourceEncoding>
                     <minimumTokens>100</minimumTokens>
