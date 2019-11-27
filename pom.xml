@@ -61,5 +61,31 @@
         </executions>
 	</plugin>
     </plugins>
+<reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <configLocation>checkstyle-config.xml</
+configLocation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <configuration>
+                    <rulesets>
+                        <!-- this "../" is not a good practice but it
+works-->
+                        <ruleset>../pmd-config.xml</ruleset>
+                    </rulesets>
+                    <sourceEncoding>utf-8</sourceEncoding>
+                    <minimumTokens>100</minimumTokens>
+                    </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
   </build>
 </project>
