@@ -7,7 +7,7 @@ package com.github.jitpack;
 public class App 
 {
 
-    
+    public final int BAR = 42;
     public static void main(String[] args)
     {
         System.out.println(new App().greet("world"));
